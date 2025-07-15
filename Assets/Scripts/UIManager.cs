@@ -12,7 +12,7 @@ public class UIManager : MonoBehaviour
     void Start()
     {
         txtMoney.text = $"Money: $0";
-        txtHealth.text = new string('♥', 5);
+        txtHealth.text = $"Health: 5";
     }
     
     public void UpdateMoneyText(float moneyAmount)
@@ -22,6 +22,6 @@ public class UIManager : MonoBehaviour
 
     public void UpdateHealthPointsText(int healthPoints)
     {
-        txtHealth.text = new string('♥', healthPoints);
+        txtHealth.text = $"Health: {healthPoints}";
     }
 }
